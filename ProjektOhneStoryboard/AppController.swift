@@ -57,8 +57,10 @@ final class AppController {
         var rootVC : UIViewController?
        
         if(status == true) {
+            //VC if someone's logged in
             rootVC = UIViewController()
         } else {
+            //VC if no one's logged in
             rootVC = MainTabBarController()
         }
         self.rootViewController = rootVC

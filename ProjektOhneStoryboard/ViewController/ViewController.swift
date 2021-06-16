@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: "Neuen Eintrag erstellen", message: nil, preferredStyle: .alert)
         alertController.view.tintColor = .black
         alertController.addTextField { (textField) in
-            textField.placeholder = "Enter First Name"
+            textField.placeholder = "Vorname eingeben"
         }
         let createAction = UIAlertAction(title: "Erstellen", style: .default) { (action) in
             let firstTextField = alertController.textFields![0] as UITextField
